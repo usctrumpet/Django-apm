@@ -17,8 +17,8 @@ It is possible for a request to not have any parameters; if this is the case, th
 
 This library prints an MD5 hash of the response output.  The MD5 hash is calculated via a function in a shared c library.  The library is called "md5_back.so" and is included in this distribution.  The file can exist anywhere in the file system but its location should be specified in the middleware file "miniapm.py".
 
-The shared c library code is included in a file called md5.c and is compiled for Windows using the following command: gcc -fPIC -shared -o md5_back.so md5.
-
+The shared c library code is included in a file called md5.c and is compiled for Windows using the following command: gcc -fPIC -shared -o md5_back.so md5.  The binary included in this distribution 
+has been compiled for Windows.
 This library has been tested with Python 2.7 and Python 3.6.
 
 Required files for this library:
